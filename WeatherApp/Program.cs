@@ -2,7 +2,7 @@
 
 
 
-var apiKey = "d07fd64cd5c5495face164104221904";
+var apiKey = "<your-api-key>";
 var today = DateTime.Now;
 var lastWeekDate = DateTime.Now.AddDays(-5);
 WeatherApp.IWeatherAPIClient weatherAPIClient = new WeatherApp.WeatherAPIClient(apiKey);
