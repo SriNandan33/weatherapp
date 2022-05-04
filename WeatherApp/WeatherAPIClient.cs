@@ -2,7 +2,7 @@ using System.Text.Json.Nodes;
 
 namespace WeatherApp;
 
-public class WeatherAPIClient
+public class WeatherAPIClient: IWeatherAPIClient
 {
     private readonly string _apiKey;
     public WeatherAPIClient(string apiKey)

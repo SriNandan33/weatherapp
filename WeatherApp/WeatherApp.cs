@@ -3,10 +3,10 @@ using System.Text.Json.Nodes;
 namespace WeatherApp;
 
 public class WeatherApp{
-    private readonly WeatherAPIClient _weatherApiClient;
-    public WeatherApp(string apiKey)
+    private readonly IWeatherAPIClient _weatherApiClient;
+    public WeatherApp(IWeatherAPIClient weatherAPIClient)
     {
-        _weatherApiClient = new WeatherAPIClient(apiKey);
+        _weatherApiClient = weatherAPIClient;
     }
 
 
